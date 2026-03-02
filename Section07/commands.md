@@ -25,7 +25,7 @@ docker run -it -v $PWD/:/app node-util npm init
 To limit ourselves, and thus protect our file system, we can restrict ourselves to just use `npm` commands.
 
 ```docker
-FROM node:14-alpine
+FROM node:18-alpine
 WORKDIR /app
 ENTRYPOINT ["npm"]
 ```
