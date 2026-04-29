@@ -1,0 +1,128 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ve5_-zKTALSV9JJSeiQ6">
+    <mxGraphModel dx="694" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" value="" vertex="1">
+          <mxGeometry height="760" width="20" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":user-api" vertex="1">
+          <mxGeometry height="360" width="150" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-5" parent="YPxDU1qoyOk9bdUPjkWy-2" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="90" width="10" x="70" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-8" parent="YPxDU1qoyOk9bdUPjkWy-2" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="100" width="10" x="70" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-9" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-2" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-8" value="POST: /login&lt;div&gt;Body: {email, password}&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80.5" y="225" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-10" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-2" source="YPxDU1qoyOk9bdUPjkWy-8" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" value="200: {token}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80.5" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":auth-api" vertex="1">
+          <mxGeometry height="760" width="100" x="470" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-11" parent="YPxDU1qoyOk9bdUPjkWy-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="45" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-14" parent="YPxDU1qoyOk9bdUPjkWy-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="45" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-21" parent="YPxDU1qoyOk9bdUPjkWy-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-28" parent="YPxDU1qoyOk9bdUPjkWy-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-29" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-3" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-28" value="GET: verify-token/:token">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-230" y="655" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-30" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-3" source="YPxDU1qoyOk9bdUPjkWy-28" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" value="200: {message: &quot;Valid token.&quot;, uid}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-230" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":tasks-api" vertex="1">
+          <mxGeometry height="375" width="100" x="185" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-17" parent="YPxDU1qoyOk9bdUPjkWy-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="95" width="10" x="45" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-25" parent="YPxDU1qoyOk9bdUPjkWy-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="95" width="10" x="45" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-26" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-4" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-25" value="POST: /tasks&lt;div&gt;Auth: Bearer token&lt;br&gt;Body: {text, title}&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-105" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-27" edge="1" parent="YPxDU1qoyOk9bdUPjkWy-4" source="YPxDU1qoyOk9bdUPjkWy-25" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" value="201: {message: &quot;Task stored,&lt;br&gt;task}">
+          <mxGeometry relative="1" x="-0.0033" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-105" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-6" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-5" value="POST: /signup&lt;div&gt;Body: {email, password}&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="145" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-7" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-5" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" target="YPxDU1qoyOk9bdUPjkWy-1" value="201: User created!">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-12" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-5" style="html=1;verticalAlign=bottom;endArrow=open;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;endFill=0;" target="YPxDU1qoyOk9bdUPjkWy-11" value="GET: /hashed-password/:password">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="165" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-13" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" target="YPxDU1qoyOk9bdUPjkWy-5" value="hashedPassword">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-15" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-8" style="html=1;verticalAlign=bottom;endArrow=open;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;endFill=0;" target="YPxDU1qoyOk9bdUPjkWy-14" value="GET: /token/:hashedPassword/:enteredPassword">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="285" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-16" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-14" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" target="YPxDU1qoyOk9bdUPjkWy-8" value="200: {message: &quot;Token created.&quot;, token}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-18" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-17" value="GET: /tasks&lt;div&gt;Auth: Bearer token&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-19" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-17" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" target="YPxDU1qoyOk9bdUPjkWy-1" value="200: tasks">
+          <mxGeometry relative="1" x="-0.0033" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="160" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-22" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-17" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="YPxDU1qoyOk9bdUPjkWy-21" value="GET: verify-token/:token">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="535" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPxDU1qoyOk9bdUPjkWy-23" edge="1" parent="1" source="YPxDU1qoyOk9bdUPjkWy-21" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" target="YPxDU1qoyOk9bdUPjkWy-17" value="200: {message: &quot;Valid token.&quot;, uid}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
