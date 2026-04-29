@@ -14,9 +14,7 @@ spec:
     spec:
       containers:
       - name: users
-        image: avermaas/kub-demo-users:2
+        image: avermaas/kub-demo-users:latest
         env:
           - name: AUTH_ADDRESS
-            value: localhost:80
-      - name: auth
-        image: avermaas/kub-demo-auth:1
+            value: 10.105.231.81:80
