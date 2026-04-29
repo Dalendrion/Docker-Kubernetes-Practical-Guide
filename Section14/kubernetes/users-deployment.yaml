@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: users
-        image: avermaas/kub-demo-users:latest
+        image: avermaas/kub-demo-users:4
         env:
           - name: AUTH_ADDRESS
-            value: 10.105.231.81:80
+            value: auth-service.default:80 # service name . namespace : port
