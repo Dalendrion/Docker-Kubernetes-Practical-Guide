@@ -18,3 +18,10 @@ spec:
         env:
           - name: AUTH_ADDRESS
             value: auth-service.default:80 # service name . namespace : port
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: "1"
+          requests:
+            memory: 264Mi
+            cpu: "0.2"

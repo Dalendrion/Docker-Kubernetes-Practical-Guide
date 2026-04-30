@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasks-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasks
+  template:
+    metadata:
+      labels:
+        app: tasks
+    spec:
+      containers:
+        - name: tasks
+          image: avermaas/kub-demo-tasks:1
+          env:
+            - name: AUTH_ADDRESS
+              value: auth-service.default:80 # service name . namespace : port
+            - name: TASKS_FOLDER
+              value: tasks
+          volumeMounts:
+            - name: tasks-volume
+              mountPath: /app/tasks
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 264Mi
+              cpu: "0.2"
+      volumes:
+        - name: tasks-volume
+          persistentVolumeClaim:
+            claimName: tasks-persistent-volume-claim
