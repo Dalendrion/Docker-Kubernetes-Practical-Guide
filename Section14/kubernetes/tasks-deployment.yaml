@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tasks
-          image: avermaas/kub-demo-tasks:1
+          image: avermaas/kub-demo-tasks:7
           env:
             - name: AUTH_ADDRESS
               value: auth-service.default:80 # service name . namespace : port

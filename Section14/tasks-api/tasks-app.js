@@ -11,13 +11,20 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST,GET,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+  next();
+})
+
 const extractAndVerifyToken = async (headers) => {
   if (!headers.authorization) {
     throw new Error('No token provided.');
   }
   const token = headers.authorization.split(' ')[1]; // expects Bearer TOKEN
 
-  const response = await axios.get(`http://${process.env.AUTH_ADDRESS}/verify-token/${token}`);
+  const response = await axios.get(`http://${process.env.AUTH_ADDRESS}/verify-token/` + token);
   return response.data.uid;
 };
 
@@ -49,7 +56,7 @@ app.post('/tasks', async (req, res) => {
     const title = req.body.title;
     const task = { title, text };
     const jsonTask = JSON.stringify(task);
-    fs.appendFile(filePath, `${jsonTask}TASK_SPLIT`, (err) => {
+    fs.appendFile(filePath, jsonTask + 'TASK_SPLIT', (err) => {
       if (err) {
         console.log(err);
         return res.status(500).json({ message: 'Storing the task failed.' });
@@ -57,7 +64,6 @@ app.post('/tasks', async (req, res) => {
       res.status(201).json({ message: 'Task stored.', createdTask: task });
     });
   } catch (err) {
-    console.log(err);
     return res.status(401).json({ message: 'Could not verify token.' });
   }
 });
