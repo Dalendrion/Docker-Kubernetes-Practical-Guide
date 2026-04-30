@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: avermaas/kub-demo-frontend:1
+        image: avermaas/kub-demo-frontend:3
         resources:
           limits:
             memory: 512Mi
