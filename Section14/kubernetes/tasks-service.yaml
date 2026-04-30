@@ -7,6 +7,6 @@ spec:
     app: tasks
   type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 8000
-    targetPort: 8000
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

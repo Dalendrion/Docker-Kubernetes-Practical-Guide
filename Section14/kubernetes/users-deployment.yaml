@@ -4,7 +4,7 @@ metadata:
   name: users-deployment
 spec:
   replicas: 1
-  selector:
+  selector: 
     matchLabels:
       app: users
   template:
@@ -13,15 +13,9 @@ spec:
         app: users
     spec:
       containers:
-      - name: users
-        image: avermaas/kub-demo-users:4
-        env:
-          - name: AUTH_ADDRESS
-            value: auth-service.default:80 # service name . namespace : port
-        resources:
-          limits:
-            memory: 512Mi
-            cpu: "1"
-          requests:
-            memory: 264Mi
-            cpu: "0.2"
+        - name: users
+          image: avermaas/kub-demo-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              # value: "10.99.104.252"
+              value: "auth-service.default"

@@ -4,7 +4,7 @@ metadata:
   name: auth-deployment
 spec:
   replicas: 1
-  selector:
+  selector: 
     matchLabels:
       app: auth
   template:
@@ -13,12 +13,5 @@ spec:
         app: auth
     spec:
       containers:
-      - name: auth
-        image: avermaas/kub-demo-auth:1
-        resources:
-            limits:
-              memory: 512Mi
-              cpu: "1"
-            requests:
-              memory: 264Mi
-              cpu: "0.2"
+        - name: auth
+          image: avermaas/kub-demo-auth:latest

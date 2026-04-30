@@ -4,7 +4,7 @@ metadata:
   name: frontend-deployment
 spec:
   replicas: 1
-  selector:
+  selector: 
     matchLabels:
       app: frontend
   template:
@@ -13,12 +13,5 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend
-        image: avermaas/kub-demo-frontend:3
-        resources:
-          limits:
-            memory: 512Mi
-            cpu: "1"
-          requests:
-            memory: 264Mi
-            cpu: "0.2"
+        - name: frontend
+          image: avermaas/kub-demo-frontend:latest

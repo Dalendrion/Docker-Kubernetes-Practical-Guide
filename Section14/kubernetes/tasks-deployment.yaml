@@ -4,7 +4,7 @@ metadata:
   name: tasks-deployment
 spec:
   replicas: 1
-  selector:
+  selector: 
     matchLabels:
       app: tasks
   template:
@@ -14,22 +14,16 @@ spec:
     spec:
       containers:
         - name: tasks
-          image: avermaas/kub-demo-tasks:7
+          image: avermaas/kub-demo-tasks:latest
           env:
             - name: AUTH_ADDRESS
-              value: auth-service.default:80 # service name . namespace : port
+              # value: "10.99.104.252"
+              value: "auth-service.default"
             - name: TASKS_FOLDER
               value: tasks
           volumeMounts:
             - name: tasks-volume
               mountPath: /app/tasks
-          resources:
-            limits:
-              memory: 512Mi
-              cpu: "1"
-            requests:
-              memory: 264Mi
-              cpu: "0.2"
       volumes:
         - name: tasks-volume
           persistentVolumeClaim:
